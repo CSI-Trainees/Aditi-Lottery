@@ -3,18 +3,37 @@
   margin: 0;
   box-sizing: border-box;
 }
-.first{
+html{
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+#first{
   width: 100vw;
   height: 100vh;
-  background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)),url("https://wallpapercave.com/wp/TEl7wQ6.jpg");
+  background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.3)),url("https://i.pinimg.com/564x/47/60/21/4760215b099c4e5cbde18c5109f9ad9a.jpg");
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size:cover;
-  background-position: 60% 70%;
+  background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+  
+    padding-bottom: 8%;
+}
+.welcome{
+  color: white;
+  padding-top:12%;
+  padding-bottom: 8%;
+}
+.des{
+  color: white;
+  line-height: 0.5;
+  font-family: fantasy;
+
+
 }
 .sec1{
   display: flex;
@@ -44,11 +63,30 @@ button{
   width: 50%;
   height: 50%;
   padding: 4% 0;
-  font-size: 25px;
+  font-size: 30px;
+ font-family: fantasy;
   background: transparent;
     border-radius: 8px;
     box-sizing: border-box;
     cursor: pointer;
     color: white;
     letter-spacing: 1px;
+}
+.swipedown{
+  padding: 6% 0;
+  color: white;
+}
+#down{
+ font-size: 50px;
+ color: white;
+}
+/* Second Section */
+#second{
+  width: 100vw;
+  height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
