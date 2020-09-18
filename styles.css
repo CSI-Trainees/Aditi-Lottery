@@ -161,4 +161,5 @@ animation: move 1.7s infinite;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: darkgray;
 }
