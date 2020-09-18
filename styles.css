@@ -61,6 +61,7 @@ z-index: 5;
   font-family: cursive;
   letter-spacing: 1px;
     border-radius: 8px;
+    z-index: 2;
 
 }
 button{
@@ -76,6 +77,7 @@ button{
     cursor: pointer;
     color: white;
     letter-spacing: 1px;
+    z-index: 3;
 }
 .swipedown{
   padding: 6% 0;
@@ -88,11 +90,35 @@ button{
 /* images of section one */
 .broom{
   position: absolute;
-  z-index: 2;
-  padding-right: 50%;
-  padding-top: 1.8%;
+  z-index: -1;
+  padding-right: 80%;
+  padding-top: 10%;
 
-  -webkit-transform:rotate(-20deg) scale(1.5);
+
+
+}
+@keyframes diagonal{
+  0%{
+    -webkit-transform:rotate(-18deg) scale(1.0) ;
+  }
+}
+.smoke{
+  position: absolute;
+  z-index: 1;
+  opacity: 0.4;
+  animation: zoom 1s infinite;
+}
+@keyframes zoom{
+  0%{
+    -webkit-transform:  rotate(-15deg) scale(1.9);
+  }
+50%{
+  -webkit-transform:  rotate(-15deg) scale(1.8);
+}
+100%{
+  -webkit-transform:  rotate(-15deg) scale(1.9);
+}
+
 }
 .snitch{
   position: absolute;
@@ -101,7 +127,7 @@ button{
   padding-left: 35%;
   top: -5px;
 
-animation: move 1.5s infinite;
+animation: move 1.7s infinite;
 }
 @keyframes move {
   0%{
