@@ -8,9 +8,8 @@ html{
   overflow: hidden;
 }
 #first{
-  width: 100vw;
-  height: 100vh;
-  background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.3)),url("https://i.pinimg.com/564x/47/60/21/4760215b099c4e5cbde18c5109f9ad9a.jpg");
+ position: relative;
+  background-image:linear-gradient(rgba(0.1,0,0,0.1),rgba(0,0,0,0.3)),url("https://i.pinimg.com/564x/df/44/02/df44029dc844bc08a7352cb2f37ddcbb.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size:cover;
@@ -20,9 +19,14 @@ html{
     justify-content: center;
     align-items: center;
     text-align: center;
-  
+z-index: 1;
     padding-bottom: 8%;
 }
+img{
+  position: absolute;
+  z-index: 2;
+}
+
 .welcome{
   color: white;
   padding-top:12%;
@@ -30,7 +34,7 @@ html{
 }
 .des{
   color: white;
-  line-height: 0.5;
+  line-height: 2;
   font-family: fantasy;
 
 
