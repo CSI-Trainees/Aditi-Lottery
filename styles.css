@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+body{
+  font-family: 'Satisfy', cursive;
+}
 html{
   scroll-behavior: smooth;
   overflow: hidden;
@@ -11,11 +14,12 @@ html{
   width: 100vw;
   height: 100vh;
  position: relative;
-  background-image:linear-gradient(rgba(0.1,0,0,0.1),rgba(0,0,0,0.3)),url("https://i.pinimg.com/564x/df/44/02/df44029dc844bc08a7352cb2f37ddcbb.jpg");
+  background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)), url("images/stars.png"),url("https://i.pinimg.com/564x/df/44/02/df44029dc844bc08a7352cb2f37ddcbb.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: center;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,15 +34,16 @@ z-index: 5;
   color: white;
   padding-top:12%;
   padding-bottom: 8%;
+    font-family: 'Satisfy', cursive;
 }
 .des{
   color: white;
   line-height: 2;
-  font-family: cursive;
+    font-family: 'Satisfy', cursive;
 }
 .des1{
   font-size: 1.5rem;
-  font-family: cursive;
+    font-family: 'Satisfy', cursive;
 }
 .sec1{
   display: flex;
@@ -58,7 +63,7 @@ z-index: 5;
   background: transparent;
   font-size: 30px;
   color: white;
-  font-family: cursive;
+    font-family: 'Satisfy', cursive;
   letter-spacing: 1px;
     border-radius: 8px;
     z-index: 2;
@@ -69,23 +74,36 @@ button{
   width: 50%;
   height: 50%;
   padding: 4% 0;
-  font-size: 30px;
- font-family: fantasy;
+  font-size: 2rem;
+font-family: 'Satisfy', cursive;
   background: transparent;
-    border-radius: 8px;
+    border-radius: 10px;
     box-sizing: border-box;
     cursor: pointer;
     color: white;
     letter-spacing: 1px;
     z-index: 3;
 }
+button:hover{
+  background-image: url("images/cloudsbutton.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size:1.5rem;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
+
+}
 .swipedown{
   padding: 6% 0;
   color: white;
+  z-index: 5;
 }
 #down{
  font-size: 50px;
  color: white;
+ z-index: 5;
 }
 /* images of section one */
 .broom{
@@ -99,18 +117,18 @@ animation: diagonal 4s infinite;
 }
 @keyframes diagonal{
   0%{
-    -webkit-transform:rotate(-25deg) scale(1.0) translate(150px, -100px);
+    -webkit-transform:rotate(-25deg) scale(1.2) translate(150px, -100px);
   }
 
   30%{
-    -webkit-transform:rotate(-25deg) scale(1.0) translate(280px, -100px) ;
+    -webkit-transform:rotate(-25deg) scale(1.2) translate(280px, -100px) ;
   }
   65%{
-    -webkit-transform:rotate(-25deg) scale(1.0) translate(780px, -120px )  ;
+    -webkit-transform:rotate(-25deg) scale(1.2) translate(780px, -120px )  ;
   }
 
   100%{
-    -webkit-transform:rotate(-25deg) scale(1.0) translate(1120px, -90px )  ;
+    -webkit-transform:rotate(-25deg) scale(1.2) translate(1000px, -80px )  ;
   }
 }
 .smoke{
@@ -138,7 +156,7 @@ animation: diagonal 4s infinite;
   padding-left: 35%;
   top: -5px;
 
-animation: move 1.7s infinite;
+animation: move 2.5s infinite;
 }
 @keyframes move {
   0%{
@@ -161,5 +179,9 @@ animation: move 1.7s infinite;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: darkgray;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)), url("images/bgsectwo.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
 }

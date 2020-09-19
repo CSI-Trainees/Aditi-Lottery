@@ -2,8 +2,7 @@
 document.getElementById("genbut").onclick = function() {
   var number = Math.floor(Math.random()*11)+10;
   document.getElementById("lot").value=number;
-
-    this.disabled = true;
+  this.disabled = true;
   }
 
   document.getElementById("checkButton").onclick = function(){
@@ -20,11 +19,7 @@ document.getElementById("genbut").onclick = function() {
     {
       alert("Winner");
     }
-    else if(lotteryNumber == NULL)
-    {
-      alert("Please enter the above number");
-    }
-    else
+    
     {
       alert("sorry");
     }
