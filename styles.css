@@ -91,11 +91,11 @@ html {
 }
 
 #genbut:hover {
-  background-color: gold;
+  background-image: url("images/button");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: black;
   font-weight: bold;
   letter-spacing: 1px;
@@ -224,6 +224,9 @@ html {
   width: 50%;
   height: 25%;
   padding: 4% 0;
+  margin: 1%;
+  align-items: center;
+  text-align: center;
   font-size: 1.5rem;
   font-family: 'Satisfy', cursive;
   background: transparent;
@@ -236,7 +239,7 @@ html {
 }
 
 #checkButton:hover {
-  background-color: black;
+  background-image: url("images/button.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -254,7 +257,7 @@ html {
   background-color: white;
   top: -1150px;
   z-index: 8;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("images/footer1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url("images/footer1.jpg");
 }
 .nearly {
   position: absolute;
@@ -291,13 +294,52 @@ opacity: 0.8;
   }
 
   100% {
-    -webkit-transform: rotate(-23deg) scale(1.5) translate(-270px, -550px)   ;
+    -webkit-transform: rotate(-23deg) scale(1.5) translate(-270px, -650px)   ;
   }
 }
-/* .last{
+.last{
 
- background-color: white;
- margin: 3% 0 3%;
-top: -350px;
- z-index: 5;
-} */
+color: white;
+padding: 0.25% 2% 0.25% 2%;
+text-align: center;
+font-size: 1.5rem;
+}
+.face{
+  color: #0077b6;
+ padding-right: 1%;
+ font-size: 2rem;
+}
+.insta{
+  color: pink;
+ padding-right: 1%;
+ font-size: 2rem;
+}
+.env{
+  color: white;
+ padding-right: 1%;
+ font-size: 2rem;
+}
+.face:hover{
+color: #9bf6ff;
+animation: ho 2s ease;
+}
+.insta:hover{
+color: #ff5d8f;
+-webkit-transform: scale(1.2) rotate(-23deg) ;
+}
+.env:hover{
+color: #f0e6ef;
+-webkit-transform: scale(1.2) rotate(-23deg) ;
+}
+@keyframes ho{
+  from{
+    -webkit-transform: scale(0.5) rotate(-15deg) ;
+  }
+  to{
+    -webkit-transform: scale(1.2) rotate(-23deg) ;
+  }
+}
+.rights{
+  font-size: 0.75rem;
+ color: white;
+}
