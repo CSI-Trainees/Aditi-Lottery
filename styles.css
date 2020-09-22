@@ -77,7 +77,7 @@ html {
 #genbut {
   position: relative;
   width: 50%;
-  height: 50%;
+  height: 40%;
   padding: 4% 0;
   font-size: 2rem;
   font-family: 'Satisfy', cursive;
@@ -91,12 +91,12 @@ html {
 }
 
 #genbut:hover {
-  background-image: url("images/button");
+  background-image: url("images/bgsec.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 2rem;
-  color: black;
+  color: #f0e6ef;
   font-weight: bold;
   letter-spacing: 1px;
 }
@@ -109,8 +109,12 @@ html {
 
 #down {
   font-size: 50px;
-  color: white;
+color: white;
   z-index: 5;
+}
+#down:hover{
+  color: #f0e6ef;
+  transform: translateY(40px) scale(1.4);
 }
 
 /* images of section one */
@@ -257,7 +261,7 @@ html {
   background-color: white;
   top: -1150px;
   z-index: 8;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url("images/footer1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("images/footer1.jpg");
 }
 .nearly {
   position: absolute;
@@ -303,43 +307,91 @@ color: white;
 padding: 0.25% 2% 0.25% 2%;
 text-align: center;
 font-size: 1.5rem;
+z-index: 10;
 }
 .face{
-  color: #0077b6;
+  color:  #d6ba4c;
  padding-right: 1%;
  font-size: 2rem;
 }
 .insta{
-  color: pink;
+  color:  #d6ba4c;
  padding-right: 1%;
  font-size: 2rem;
 }
 .env{
-  color: white;
+  color: #d6ba4c;
  padding-right: 1%;
  font-size: 2rem;
 }
+a:hover i{
+  transform: scale(1.4) rotate(25deg);
+}
 .face:hover{
 color: #9bf6ff;
-animation: ho 2s ease;
+
 }
 .insta:hover{
 color: #ff5d8f;
--webkit-transform: scale(1.2) rotate(-23deg) ;
+
 }
 .env:hover{
 color: #f0e6ef;
--webkit-transform: scale(1.2) rotate(-23deg) ;
+
 }
-@keyframes ho{
-  from{
-    -webkit-transform: scale(0.5) rotate(-15deg) ;
-  }
-  to{
-    -webkit-transform: scale(1.2) rotate(-23deg) ;
-  }
-}
+
 .rights{
   font-size: 0.75rem;
  color: white;
+}
+/* RESULT */
+#res{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("images/stars.png"), url("https://i.pinimg.com/564x/df/44/02/df44029dc844bc08a7352cb2f37ddcbb.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 5;
+  padding-bottom: 8%;
+}
+.firstlayer{
+  background-color: white;
+  height: 120vh;
+  width: 80vw;
+
+padding: 5%;
+  margin-top: 5%;
+}
+.secondlayer{
+
+
+  background-color: gold;
+  height: 80vh;
+  width:70vw;
+  padding: 5%;
+    margin-top: 5%;
+    margin-right: 85%;
+    justify-content: center;
+}
+.pics{
+  height: 45vh;
+  width: 20vw;
+background-color: black;
+margin-top: 5%;
+margin-left: 30%;
+align-items: center;
+background-image: url("images/ravenclaw.jpg");
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: contain;
+background-position: 50% 110%;
 }
