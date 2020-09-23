@@ -14,26 +14,32 @@ document.getElementById("genbut").onclick = function() {
 
       if(lotteryNumber == 12 || lotteryNumber == 16 ||lotteryNumber == 18)
       {
+        document.getElementById("welcome").innerHTML = "Welcome To HORGWARTS!!";
         lotterypic();
+
+
       }
     else
       {
-        div.style.backgroundImage = "images/hufflepuff.jpg";
+        document.getElementById("pics").style.backgroundImage ="url(images/sorry.jpg)";
+        document.getElementById("welcome").innerHTML = "Better Luck Next Time";
       }
 
 
 
     this.disabled = true;
   }
-  var pic = ["images/gryffindor.jpg","images/hufflepuff.jpg","images/ravenclaw.jpg","images/slytherin.jpg"];
-  var kb;
-  var div = document.getElementById("pics");
+  var pic = ["images/gry.jpg","images/huffle.jpg","images/raven.jpg","images/sly.jpg"];
+var kb;
+var div = document.getElementById("pics");
+
 function lotterypic(){
 
-  var num = Math.floor(Math.random()* pic.length)
-  console.log(num);
-  var img = pic[num];
-  console.log(img);
+var num = Math.floor(Math.random()* pic.length)
+console.log(num);
+var img =pic[num];
+console.log(img);
 
-div.style.backgroundImage ="url(img)";
+document.getElementById("pics").style.backgroundImage ="url(" + img +")";
+
 }

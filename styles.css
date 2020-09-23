@@ -192,7 +192,7 @@ color: white;
 /* Second Section */
 #second {
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -254,7 +254,7 @@ color: white;
 }
 
 #foot {
-  height: 10vh;
+  height: 20vh;
   width: 100vw;
   text-align: center;
   font-size: 1.2rem;
@@ -307,22 +307,25 @@ color: white;
 padding: 0.25% 2% 0.25% 2%;
 text-align: center;
 font-size: 1.5rem;
-z-index: 10;
+z-index: 100;
 }
 .face{
   color:  #d6ba4c;
  padding-right: 1%;
  font-size: 2rem;
+ z-index: 100;
 }
 .insta{
   color:  #d6ba4c;
  padding-right: 1%;
  font-size: 2rem;
+ z-index: 100;
 }
 .env{
   color: #d6ba4c;
  padding-right: 1%;
  font-size: 2rem;
+ z-index: 100;
 }
 a:hover i{
   transform: scale(1.4) rotate(25deg);
@@ -347,7 +350,7 @@ color: #f0e6ef;
 /* RESULT */
 #res{
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   position: relative;
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("images/stars.png"), url("https://i.pinimg.com/564x/df/44/02/df44029dc844bc08a7352cb2f37ddcbb.jpg");
@@ -361,37 +364,164 @@ color: #f0e6ef;
   align-items: center;
   text-align: center;
   z-index: 5;
-  padding-bottom: 8%;
+  padding-bottom: 4% auto;
 }
 .firstlayer{
-  background-color: white;
-  height: 120vh;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url("images/dark.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
   width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+z-index: -1;
 
-padding: 5%;
-  margin-top: 5%;
 }
 .secondlayer{
+  position: relative;
 
-
-  background-color: gold;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("images/quid1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   height: 80vh;
   width:70vw;
   padding: 5%;
-    margin-top: 5%;
-    margin-right: 85%;
+    margin-top: 3%;
+
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+.layer1{
+  position: absolute;
+  z-index: 2;
+opacity: 0.9;
+  margin-top: 48%;
+  margin-right: 85%;
+  animation: clouds 3s infinite;
+}
+.layer2{
+  position: absolute;
+  z-index: 2;
+  margin-top: 48%;
+  margin-right: 55%;
+  animation: up 3s infinite;
+}
+.layer3{
+  position: absolute;
+  z-index: 2;
+  margin-top: 48%;
+  margin-right: 25%;
+  animation: clouds 3s infinite;
+}
+.layer4{
+  position: absolute;
+  z-index: 2;
+  margin-top: 48%;
+  margin-left: 25%;
+  animation: clouds 3s infinite;
+}
+.layer5{
+  position: absolute;
+  z-index: 2;
+  margin-top: 48%;
+  margin-left: 55%;
+  animation: up 3s infinite;
+}
+.layer6{
+  position: absolute;
+  z-index: 2;
+  margin-top: 48%;
+  margin-left: 85%;
+  animation: clouds 3s infinite;
+}
+@keyframes clouds{
+  0%
+  {
+    transform: scale(1.0) rotate(7deg);
+  }
+  50%{
+    transform:scale(1.4) rotate(7deg);
+  }
+  100%{
+    transform:scale(1.1) rotate(7deg);
+  }
+
+}
+@keyframes up{
+  0%
+  {
+    transform: scale(1.0) translateY(20px) rotate(7deg);
+  }
+  50%{
+    transform:scale(1.4)translateY(-10px) rotate(7deg);
+  }
+  100%{
+    transform:scale(1.1) translateY(20px) rotate(7deg);
+  }
 }
 #pics{
-  height: 45vh;
-  width: 20vw;
-
-margin-top: 5%;
-margin-left: 30%;
-align-items: center;
-background-image: url("images/ravenclaw.jpg");
-background-attachment: fixed;
+  height: 30vh;
+  width: 12vw;
+margin-left: 5%;
 background-repeat: no-repeat;
-background-size: contain;
-background-position: 50% 110%;
+/* display: flex;
+flex-direction: column; */
+justify-content: center;
+align-items: center;
+text-align: center;
+z-index: 100;
+border-radius: 8px;
+box-sizing: border-box;
+transform: scale(1.4);
+
+
+}
+.back{
+  position: relative;
+  width: 120%;
+  height: 85%;
+  padding: 5% 5%;
+  margin: 1%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Satisfy', cursive;
+  background: transparent;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: white;
+  letter-spacing: 1px;
+  z-index: 2;
+}
+.back:hover{
+  background-image: url("images/bgsec.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 1.5rem;
+  color: #f0e6ef;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+#welcome{
+    font-family: 'Satisfy', cursive;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    z-index: 100;
+    padding: 15% ;
 }
