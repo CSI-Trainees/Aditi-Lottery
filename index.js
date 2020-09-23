@@ -16,12 +16,12 @@ document.getElementById("genbut").onclick = function() {
       {
         document.getElementById("welcome").innerHTML = "Welcome To HORGWARTS!!";
         lotterypic();
-
+         document.getElementById("letter").style.backgroundImage ="url(images/letter.png)";
 
       }
     else
       {
-        document.getElementById("pics").style.backgroundImage ="url(images/sorry.jpg)";
+        document.getElementById("pics").style.backgroundImage ="url(images/sorry1.png)";
         document.getElementById("welcome").innerHTML = "Better Luck Next Time";
       }
 
