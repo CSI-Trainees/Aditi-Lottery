@@ -382,10 +382,10 @@ padding: 5%;
     margin-right: 85%;
     justify-content: center;
 }
-.pics{
+#pics{
   height: 45vh;
   width: 20vw;
-background-color: black;
+
 margin-top: 5%;
 margin-left: 30%;
 align-items: center;

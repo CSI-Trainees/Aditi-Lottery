@@ -18,7 +18,7 @@ document.getElementById("genbut").onclick = function() {
       }
     else
       {
-        document.getElementsById("mypic").src = 'images/'+ pic[3]+ '.jpg';
+        div.style.backgroundImage = "images/hufflepuff.jpg";
       }
 
 
@@ -27,6 +27,7 @@ document.getElementById("genbut").onclick = function() {
   }
   var pic = ["images/gryffindor.jpg","images/hufflepuff.jpg","images/ravenclaw.jpg","images/slytherin.jpg"];
   var kb;
+  var div = document.getElementById("pics");
 function lotterypic(){
 
   var num = Math.floor(Math.random()* pic.length)
@@ -34,4 +35,5 @@ function lotterypic(){
   var img = pic[num];
   console.log(img);
 
+div.style.backgroundImage ="url(img)";
 }
