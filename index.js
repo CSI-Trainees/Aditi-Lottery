@@ -29,7 +29,7 @@ document.getElementById("genbut").onclick = function() {
 
     this.disabled = true;
   }
-  var pic = ["images/gry.jpg","images/huffle.jpg","images/raven.jpg","images/sly.jpg"];
+  var pic = ["images/gry.jpg","images/huffle.png","images/raven.jpg","images/sly.jpg"];
 var kb;
 var div = document.getElementById("pics");
 
