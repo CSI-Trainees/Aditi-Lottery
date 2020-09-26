@@ -21,8 +21,10 @@ document.getElementById("genbut").onclick = function() {
       }
       else if(lotteryNumber=== "")
       {
-        alert("PLease don't leave this empty!! Try again and enter the value received to check your faith.");
+        alert("Please enter the value received above!!");
+          document.getElementById("try").innerHTML = "Click The button to try again to check your fate.";
       }
+
     else
       {
         document.getElementById("pics").style.backgroundImage ="url(images/sorry1.png)";

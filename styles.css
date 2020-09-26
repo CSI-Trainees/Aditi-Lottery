@@ -586,3 +586,13 @@ animation: sorthat 5s infinite;
     -webkit-transform: rotate(-23deg) scale(1.5) translate(-770px, -650px)   ;
   }
 }
+#try{
+  font-family: 'Satisfy', cursive;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+  z-index: 100;
+  padding: 15% ;
+}
