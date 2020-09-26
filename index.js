@@ -21,7 +21,7 @@ document.getElementById("genbut").onclick = function() {
       }
       else if(lotteryNumber=== "")
       {
-        alert("Enter the lucky number received above");
+        alert("PLease don't leave this empty!! Try again and enter the value received to check your faith.");
       }
     else
       {
