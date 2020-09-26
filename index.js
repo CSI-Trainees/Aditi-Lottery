@@ -19,6 +19,10 @@ document.getElementById("genbut").onclick = function() {
          document.getElementById("letter").style.backgroundImage ="url(images/letter.png)";
 
       }
+      else if(lotteryNumber=== "")
+      {
+        alert("Enter the lucky number received above");
+      }
     else
       {
         document.getElementById("pics").style.backgroundImage ="url(images/sorry1.png)";
